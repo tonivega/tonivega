@@ -1,0 +1,57 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='600' height='320' viewBox='0 0 600 320' role='img' aria-label='Nitro UberPad'>
+  <defs>
+    <linearGradient id='bg' x1='0' y1='0' x2='1' y2='1'>
+      <stop offset='0' stop-color='#0f172a'/>
+      <stop offset='1' stop-color='#060912'/>
+    </linearGradient>
+    <linearGradient id='edge' x1='0' y1='0' x2='1' y2='1'>
+      <stop offset='0' stop-color='#a78bfa'/>
+      <stop offset='1' stop-color='#1e293b'/>
+    </linearGradient>
+    <radialGradient id='glow' cx='0.9' cy='0.1' r='0.7'>
+      <stop offset='0' stop-color='#a78bfa' stop-opacity='0.25'/>
+      <stop offset='1' stop-color='#a78bfa' stop-opacity='0'/>
+    </radialGradient>
+  </defs>
+  <style>
+    text { font-family: 'Segoe UI', Inter, system-ui, -apple-system, Helvetica, Arial, sans-serif; }
+    .mono { font-family: 'JetBrains Mono', 'Fira Code', Consolas, Menlo, monospace; }
+    .tag { font-size: 12px; font-weight: 700; letter-spacing: 2px; fill: #a78bfa; }
+    .title { font-size: 32px; font-weight: 800; fill: #f8fafc; }
+    .sub { font-size: 15px; fill: #94a3b8; }
+    .item { font-size: 14px; fill: #cbd5e1; }
+    .dot { fill: #a78bfa; }
+    .cta { font-size: 13px; font-weight: 700; fill: #a78bfa; }
+    .glow { animation: breathe 6s ease-in-out infinite; }
+    @keyframes breathe { 0%,100% { opacity: 0.55; } 50% { opacity: 1; } }
+    .hex { font-size: 13px; fill: #475569; }
+    .hot { fill: #f8fafc; animation: hot 1.6s step-end infinite; }
+    @keyframes hot { 50% { fill: #a78bfa; } }
+    .sel { fill: #a78bfa; animation: sel 1.6s step-end infinite; }
+    @keyframes sel { 0% { opacity: 0.35; } 50% { opacity: 0.15; } }
+  </style>
+  <rect x='1' y='1' width='598' height='318' rx='18' fill='url(#bg)' stroke='url(#edge)' stroke-width='2'/>
+  <rect class='glow' x='1' y='1' width='598' height='318' rx='18' fill='url(#glow)'/>
+
+  <g>
+    <rect x='428' y='26' width='148' height='92' rx='10' fill='#0b1222' stroke='#1e293b'/>
+    <rect class='sel' x='497' y='54' width='21' height='20' rx='3'/>
+    <text x='440' y='50' class='hex mono'>4E 49 54 52</text>
+    <text x='440' y='70' class='hex mono'>4F 2D <tspan class='hot'>F0</tspan> 9F</text>
+    <text x='440' y='90' class='hex mono'>98 80 0A 00</text>
+    <text x='440' y='110' class='hex mono'>6C 75 61 21</text>
+  </g>
+
+  <text x='32' y='48' class='tag mono'>GO · FYNE · LUA 5.1</text>
+  <text x='32' y='92' class='title'>Nitro UberPad</text>
+  <text x='32' y='124' class='sub'>A paged text &amp; hex editor that speaks Lua.</text>
+
+  <circle class='dot' cx='38' cy='166' r='4'/>
+  <text x='52' y='171' class='item'>Pages huge files instead of one giant text buffer</text>
+  <circle class='dot' cx='38' cy='196' r='4'/>
+  <text x='52' y='201' class='item'>Nibble-level hex editing &amp; Unicode character inspector</text>
+  <circle class='dot' cx='38' cy='226' r='4'/>
+  <text x='52' y='231' class='item'>Lua builds menus, buttons, timers, tasks &amp; binary templates</text>
+
+  <text x='32' y='288' class='cta mono'>github.com/tonivega/nitro-uber-pad →</text>
+</svg>

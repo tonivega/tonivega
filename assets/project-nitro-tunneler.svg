@@ -1,0 +1,61 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='600' height='320' viewBox='0 0 600 320' role='img' aria-label='Nitro On-Demand Tunneler'>
+  <defs>
+    <linearGradient id='bg' x1='0' y1='0' x2='1' y2='1'>
+      <stop offset='0' stop-color='#0f172a'/>
+      <stop offset='1' stop-color='#060912'/>
+    </linearGradient>
+    <linearGradient id='edge' x1='0' y1='0' x2='1' y2='1'>
+      <stop offset='0' stop-color='#fbbf24'/>
+      <stop offset='1' stop-color='#1e293b'/>
+    </linearGradient>
+    <radialGradient id='glow' cx='0.9' cy='0.1' r='0.7'>
+      <stop offset='0' stop-color='#fbbf24' stop-opacity='0.22'/>
+      <stop offset='1' stop-color='#fbbf24' stop-opacity='0'/>
+    </radialGradient>
+  </defs>
+  <style>
+    text { font-family: 'Segoe UI', Inter, system-ui, -apple-system, Helvetica, Arial, sans-serif; }
+    .mono { font-family: 'JetBrains Mono', 'Fira Code', Consolas, Menlo, monospace; }
+    .tag { font-size: 12px; font-weight: 700; letter-spacing: 2px; fill: #fbbf24; }
+    .title { font-size: 32px; font-weight: 800; fill: #f8fafc; }
+    .sub { font-size: 15px; fill: #94a3b8; }
+    .item { font-size: 14px; fill: #cbd5e1; }
+    .dot { fill: #fbbf24; }
+    .cta { font-size: 13px; font-weight: 700; fill: #fbbf24; }
+    .glow { animation: breathe 6s ease-in-out infinite; }
+    @keyframes breathe { 0%,100% { opacity: 0.55; } 50% { opacity: 1; } }
+    .wire { stroke: #334155; stroke-width: 2; stroke-dasharray: 4 6; }
+    .pulse { fill: #fbbf24; animation: travel 2.6s ease-in-out infinite; }
+    @keyframes travel { 0% { transform: translateX(0); opacity: 0; } 10% { opacity: 1; } 90% { opacity: 1; } 100% { transform: translateX(104px); opacity: 0; } }
+    .end { fill: #0b1222; stroke-width: 2; }
+    .wake { fill: #fbbf24; animation: wake 2.6s ease-in-out infinite; }
+    @keyframes wake { 0%,70% { opacity: 0.15; } 85%,100% { opacity: 1; } }
+    .lbl { font-size: 10px; fill: #64748b; letter-spacing: 1px; }
+  </style>
+  <rect x='1' y='1' width='598' height='318' rx='18' fill='url(#bg)' stroke='url(#edge)' stroke-width='2'/>
+  <rect class='glow' x='1' y='1' width='598' height='318' rx='18' fill='url(#glow)'/>
+
+  <g>
+    <line class='wire' x1='462' y1='72' x2='550' y2='72'/>
+    <circle class='end' cx='452' cy='72' r='14' stroke='#94a3b8'/>
+    <circle cx='452' cy='72' r='5' fill='#94a3b8'/>
+    <circle class='pulse' cx='452' cy='72' r='5'/>
+    <circle class='end' cx='556' cy='72' r='14' stroke='#fbbf24'/>
+    <circle class='wake' cx='556' cy='72' r='6'/>
+    <text x='436' y='108' class='lbl mono'>CLIENT</text>
+    <text x='532' y='108' class='lbl mono'>WAKE</text>
+  </g>
+
+  <text x='32' y='48' class='tag mono'>GO STDLIB · OPENSSH · 6 BINARIES</text>
+  <text x='32' y='92' class='title'>On-Demand Tunneler</text>
+  <text x='32' y='124' class='sub'>Connect first. Start infrastructure second.</text>
+
+  <circle class='dot' cx='38' cy='166' r='4'/>
+  <text x='52' y='171' class='item'>TCP gate that wakes containers or SSH tunnels on demand</text>
+  <circle class='dot' cx='38' cy='196' r='4'/>
+  <text x='52' y='201' class='item'>One shared startup per tunnel · deadlines &amp; cooldowns</text>
+  <circle class='dot' cx='38' cy='226' r='4'/>
+  <text x='52' y='231' class='item'>Imports ssh_config LocalForwards · config hot reload</text>
+
+  <text x='32' y='288' class='cta mono'>github.com/tonivega/nitro-ondemand-tunneler →</text>
+</svg>

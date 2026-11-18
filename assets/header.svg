@@ -1,0 +1,107 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='360' viewBox='0 0 1200 360' role='img' aria-label='Toni Vega — DevOps and Software Engineering Consultant'>
+  <defs>
+    <linearGradient id='bg' x1='0' y1='0' x2='1' y2='1'>
+      <stop offset='0' stop-color='#0b1020'/>
+      <stop offset='1' stop-color='#04060b'/>
+    </linearGradient>
+    <linearGradient id='accent' x1='0' y1='0' x2='1' y2='0'>
+      <stop offset='0' stop-color='#38bdf8'/>
+      <stop offset='0.5' stop-color='#818cf8'/>
+      <stop offset='1' stop-color='#f472b6'/>
+    </linearGradient>
+    <radialGradient id='glowA' cx='0.5' cy='0.5' r='0.5'>
+      <stop offset='0' stop-color='#38bdf8' stop-opacity='0.35'/>
+      <stop offset='1' stop-color='#38bdf8' stop-opacity='0'/>
+    </radialGradient>
+    <radialGradient id='glowB' cx='0.5' cy='0.5' r='0.5'>
+      <stop offset='0' stop-color='#a855f7' stop-opacity='0.3'/>
+      <stop offset='1' stop-color='#a855f7' stop-opacity='0'/>
+    </radialGradient>
+    <pattern id='grid' width='40' height='40' patternUnits='userSpaceOnUse'>
+      <path d='M40 0H0V40' fill='none' stroke='#1e293b' stroke-width='1'/>
+    </pattern>
+    <clipPath id='pillClip'>
+      <rect x='70' y='262' width='560' height='48' rx='12'/>
+    </clipPath>
+    <clipPath id='frame'>
+      <rect x='0' y='0' width='1200' height='360' rx='22'/>
+    </clipPath>
+  </defs>
+  <style>
+    text { font-family: 'Segoe UI', Inter, system-ui, -apple-system, Helvetica, Arial, sans-serif; }
+    .mono { font-family: 'JetBrains Mono', 'Fira Code', Consolas, Menlo, monospace; }
+    .prompt { font-size: 15px; fill: #64748b; letter-spacing: 1px; }
+    .name { font-size: 76px; font-weight: 800; fill: url(#accent); letter-spacing: -1px; }
+    .role { font-size: 26px; font-weight: 600; fill: #e2e8f0; }
+    .meta { font-size: 17px; fill: #94a3b8; }
+    .cmd { font-size: 18px; fill: #e2e8f0; }
+    .cmd .p { fill: #34d399; }
+    .cmd .f { fill: #818cf8; }
+    .grid { opacity: 0.55; }
+    .glowA { animation: floatA 9s ease-in-out infinite; }
+    .glowB { animation: floatB 11s ease-in-out infinite; }
+    @keyframes floatA { 0%,100% { transform: translate(0,0); } 50% { transform: translate(60px,30px); } }
+    @keyframes floatB { 0%,100% { transform: translate(0,0); } 50% { transform: translate(-70px,-20px); } }
+    .scan { animation: scan 6s linear infinite; }
+    @keyframes scan { from { transform: translateY(-40px); } to { transform: translateY(400px); } }
+    .typer { animation: type 9s steps(44) infinite; }
+    @keyframes type { 0% { transform: translateX(0); } 50%,100% { transform: translateX(480px); } }
+    .cursor { animation: blink 1s step-end infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+    .link { fill: none; stroke: #334155; stroke-width: 1.5; }
+    .flow { fill: none; stroke: url(#accent); stroke-width: 2; stroke-dasharray: 6 10; animation: flow 2.5s linear infinite; opacity: 0.85; }
+    @keyframes flow { to { stroke-dashoffset: -64; } }
+    .node { fill: #0b1222; stroke-width: 2; }
+    .core { animation: pulse 2.4s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    .d1 { animation-delay: 0.4s; } .d2 { animation-delay: 0.8s; } .d3 { animation-delay: 1.2s; } .d4 { animation-delay: 1.6s; } .d5 { animation-delay: 2s; }
+    @keyframes pulse { 0%,100% { opacity: 0.45; transform: scale(0.8); } 50% { opacity: 1; transform: scale(1.15); } }
+    .lbl { font-size: 12px; fill: #64748b; letter-spacing: 1.5px; }
+  </style>
+
+  <g clip-path='url(#frame)'>
+    <rect width='1200' height='360' fill='url(#bg)'/>
+    <rect class='grid' width='1200' height='360' fill='url(#grid)'/>
+    <circle class='glowA' cx='240' cy='80' r='280' fill='url(#glowA)'/>
+    <circle class='glowB' cx='1000' cy='300' r='300' fill='url(#glowB)'/>
+    <rect class='scan' x='0' y='0' width='1200' height='2' fill='#38bdf8' opacity='0.08'/>
+  </g>
+  <rect x='1' y='1' width='1198' height='358' rx='22' fill='none' stroke='#1e293b' stroke-width='2'/>
+  <rect x='70' y='0' width='240' height='3' fill='url(#accent)'/>
+
+  <text x='70' y='64' class='prompt mono'>~/tonivega $ whoami</text>
+  <text x='66' y='146' class='name'>Toni Vega</text>
+  <text x='70' y='192' class='role'>DevOps &amp; Software Engineering Consultant</text>
+  <text x='70' y='228' class='meta'>Barcelona · 15+ years shipping software, infrastructure &amp; digital platforms</text>
+
+  <rect x='70' y='262' width='560' height='48' rx='12' fill='#0b1222' stroke='#1e293b'/>
+  <text x='92' y='292' class='cmd mono'><tspan class='p'>$</tspan> deploy <tspan class='f'>--reliable --automated --observable</tspan></text>
+  <g clip-path='url(#pillClip)'>
+    <g class='typer'>
+      <rect x='106' y='270' width='540' height='32' fill='#0b1222'/>
+      <rect class='cursor' x='106' y='275' width='10' height='22' fill='#38bdf8'/>
+    </g>
+  </g>
+
+  <g>
+    <path class='link' d='M880 110 L1010 80 L1130 150 L1060 250 L920 270 L880 110 Z'/>
+    <path class='link' d='M880 110 L1060 250 M1010 80 L920 270 M1130 150 L920 270'/>
+    <path class='flow' d='M880 110 L1010 80 L1130 150 L1060 250 L920 270 Z'/>
+    <circle class='node' cx='880' cy='110' r='16' stroke='#38bdf8'/>
+    <circle class='core' cx='880' cy='110' r='6' fill='#38bdf8'/>
+    <circle class='node' cx='1010' cy='80' r='16' stroke='#818cf8'/>
+    <circle class='core d1' cx='1010' cy='80' r='6' fill='#818cf8'/>
+    <circle class='node' cx='1130' cy='150' r='16' stroke='#a78bfa'/>
+    <circle class='core d2' cx='1130' cy='150' r='6' fill='#a78bfa'/>
+    <circle class='node' cx='1060' cy='250' r='16' stroke='#f472b6'/>
+    <circle class='core d3' cx='1060' cy='250' r='6' fill='#f472b6'/>
+    <circle class='node' cx='920' cy='270' r='16' stroke='#34d399'/>
+    <circle class='core d4' cx='920' cy='270' r='6' fill='#34d399'/>
+    <circle class='node' cx='1000' cy='175' r='22' stroke='#e2e8f0'/>
+    <circle class='core d5' cx='1000' cy='175' r='8' fill='#e2e8f0'/>
+    <text x='842' y='76' class='lbl mono'>CI/CD</text>
+    <text x='990' y='52' class='lbl mono'>CLOUD</text>
+    <text x='1110' y='118' class='lbl mono'>API</text>
+    <text x='1040' y='292' class='lbl mono'>IOT</text>
+    <text x='880' y='312' class='lbl mono'>AI OPS</text>
+  </g>
+</svg>

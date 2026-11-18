@@ -1,0 +1,60 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='600' height='320' viewBox='0 0 600 320' role='img' aria-label='go4c — Go to C transpiler'>
+  <defs>
+    <linearGradient id='bg' x1='0' y1='0' x2='1' y2='1'>
+      <stop offset='0' stop-color='#0f172a'/>
+      <stop offset='1' stop-color='#060912'/>
+    </linearGradient>
+    <linearGradient id='edge' x1='0' y1='0' x2='1' y2='1'>
+      <stop offset='0' stop-color='#38bdf8'/>
+      <stop offset='1' stop-color='#1e293b'/>
+    </linearGradient>
+    <radialGradient id='glow' cx='0.9' cy='0.1' r='0.7'>
+      <stop offset='0' stop-color='#38bdf8' stop-opacity='0.25'/>
+      <stop offset='1' stop-color='#38bdf8' stop-opacity='0'/>
+    </radialGradient>
+  </defs>
+  <style>
+    text { font-family: 'Segoe UI', Inter, system-ui, -apple-system, Helvetica, Arial, sans-serif; }
+    .mono { font-family: 'JetBrains Mono', 'Fira Code', Consolas, Menlo, monospace; }
+    .tag { font-size: 12px; font-weight: 700; letter-spacing: 2px; fill: #38bdf8; }
+    .title { font-size: 32px; font-weight: 800; fill: #f8fafc; }
+    .sub { font-size: 15px; fill: #94a3b8; }
+    .item { font-size: 14px; fill: #cbd5e1; }
+    .dot { fill: #38bdf8; }
+    .cta { font-size: 13px; font-weight: 700; fill: #38bdf8; }
+    .glow { animation: breathe 6s ease-in-out infinite; }
+    @keyframes breathe { 0%,100% { opacity: 0.55; } 50% { opacity: 1; } }
+    .lang { font-size: 22px; font-weight: 800; }
+    .go { fill: #00add8; }
+    .c { fill: #a8b9cc; }
+    .arrow { fill: none; stroke: #38bdf8; stroke-width: 2.5; stroke-dasharray: 5 6; animation: dash 1.2s linear infinite; }
+    @keyframes dash { to { stroke-dashoffset: -22; } }
+    .box { fill: #0b1222; stroke-width: 2; }
+    .badge { font-size: 10px; fill: #fb923c; letter-spacing: 1.5px; }
+  </style>
+  <rect x='1' y='1' width='598' height='318' rx='18' fill='url(#bg)' stroke='url(#edge)' stroke-width='2'/>
+  <rect class='glow' x='1' y='1' width='598' height='318' rx='18' fill='url(#glow)'/>
+
+  <g>
+    <rect class='box' x='432' y='40' width='52' height='52' rx='12' stroke='#00add8'/>
+    <text x='442' y='74' class='lang mono go'>Go</text>
+    <path class='arrow' d='M490 66 L516 66'/>
+    <path d='M512 60 L520 66 L512 72' fill='none' stroke='#38bdf8' stroke-width='2.5'/>
+    <rect class='box' x='526' y='40' width='52' height='52' rx='12' stroke='#a8b9cc'/>
+    <text x='544' y='74' class='lang mono c'>C</text>
+    <text x='452' y='116' class='badge mono'>EXPERIMENTAL</text>
+  </g>
+
+  <text x='32' y='48' class='tag mono'>COMPILERS · RUNTIME · NATIVE</text>
+  <text x='32' y='92' class='title'>go4c</text>
+  <text x='32' y='124' class='sub'>Transpile Go source into portable C — build with gcc or clang.</text>
+
+  <circle class='dot' cx='38' cy='166' r='4'/>
+  <text x='52' y='171' class='item'>Structs, methods, multi-return, slices, maps &amp; pointers</text>
+  <circle class='dot' cx='38' cy='196' r='4'/>
+  <text x='52' y='201' class='item'>Custom C runtime for strings, slices and hash maps</text>
+  <circle class='dot' cx='38' cy='226' r='4'/>
+  <text x='52' y='231' class='item'>Maps fmt, strings, strconv, math &amp; os to native C</text>
+
+  <text x='32' y='288' class='cta mono'>github.com/tonivega/go4c →</text>
+</svg>

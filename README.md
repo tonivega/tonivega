@@ -1,134 +1,140 @@
-<div align="center">
+<div align='center'>
 
-# Toni Vega
-
-### DevOps & Software Engineering Consultant
-
-**I help companies ship reliable cloud platforms, automate complex operations and turn difficult technical ideas into production systems.**
-
-Barcelona · 15+ years building software, infrastructure and digital platforms
+<img src='assets/header.svg' width='100%' alt='Toni Vega — DevOps &amp; Software Engineering Consultant'>
 
 <p>
-  <a href="https://www.nitrobutton.com">
-    <img src="https://img.shields.io/badge/Portfolio-Nitrobutton-2563eb?style=for-the-badge" alt="Nitrobutton portfolio">
-  </a>
-  <a href="mailto:toni@nitrobutton.com?subject=Project%20or%20consulting%20enquiry&body=Project%3A%0A%0ACurrent%20situation%3A%0A%0ABiggest%20blocker%3A%0A%0ADesired%20deadline%3A">
-    <img src="https://img.shields.io/badge/Email-Discuss_a_Project-374151?style=for-the-badge" alt="Discuss a project by email">
-  </a>
-  <a href="https://wa.me/34933900538?text=Hi%20Toni%2C%20I%27d%20like%20to%20discuss%20a%20software%20or%20DevOps%20project.">
-    <img src="https://img.shields.io/badge/WhatsApp-Start_a_Conversation-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="Contact Toni on WhatsApp">
-  </a>
+  <a href='https://www.nitrobutton.com'><img src='https://img.shields.io/badge/Portfolio-nitrobutton.com-38bdf8?style=for-the-badge&labelColor=0d1117&logo=googlechrome&logoColor=38bdf8' alt='Nitrobutton portfolio'></a>
+  <a href='mailto:toni@nitrobutton.com?subject=Project%20or%20consulting%20enquiry&body=Project%3A%0A%0ACurrent%20situation%3A%0A%0ABiggest%20blocker%3A%0A%0ADesired%20deadline%3A'><img src='https://img.shields.io/badge/Email-Discuss_a_Project-a78bfa?style=for-the-badge&labelColor=0d1117&logo=maildotru&logoColor=a78bfa' alt='Discuss a project by email'></a>
+  <a href='https://wa.me/34933900538?text=Hi%20Toni%2C%20I%27d%20like%20to%20discuss%20a%20software%20or%20DevOps%20project.'><img src='https://img.shields.io/badge/WhatsApp-Start_a_Conversation-25D366?style=for-the-badge&labelColor=0d1117&logo=whatsapp&logoColor=25D366' alt='Contact Toni on WhatsApp'></a>
+</p>
+
+<p>
+  <img src='https://img.shields.io/badge/Go-0d1117?style=flat-square&logo=go&logoColor=00ADD8' alt='Go'>
+  <img src='https://img.shields.io/badge/Python-0d1117?style=flat-square&logo=python&logoColor=FFD43B' alt='Python'>
+  <img src='https://img.shields.io/badge/PHP-0d1117?style=flat-square&logo=php&logoColor=8892BF' alt='PHP'>
+  <img src='https://img.shields.io/badge/JavaScript-0d1117?style=flat-square&logo=javascript&logoColor=F7DF1E' alt='JavaScript'>
+  <img src='https://img.shields.io/badge/Node.js-0d1117?style=flat-square&logo=nodedotjs&logoColor=5FA04E' alt='Node.js'>
+  <img src='https://img.shields.io/badge/Shell-0d1117?style=flat-square&logo=gnubash&logoColor=4EAA25' alt='Shell'>
+  <img src='https://img.shields.io/badge/Linux-0d1117?style=flat-square&logo=linux&logoColor=FCC624' alt='Linux'>
+  <img src='https://img.shields.io/badge/Docker-0d1117?style=flat-square&logo=docker&logoColor=2496ED' alt='Docker'>
+  <img src='https://img.shields.io/badge/AWS-0d1117?style=flat-square&logo=amazonwebservices&logoColor=FF9900' alt='AWS'>
+  <img src='https://img.shields.io/badge/CI%2FCD-0d1117?style=flat-square&logo=githubactions&logoColor=2088FF' alt='CI/CD'>
 </p>
 
 </div>
 
----
+<img src='assets/divider.svg' width='100%' alt=''>
 
-## Problems I solve
+## ⚡ Featured open-source projects
+
+<p align='center'>
+  <a href='https://github.com/tonivega/nitro-archive-live'><img src='assets/project-nitro-archive.svg' width='49%' alt='NitroArchive — seekable compressed archives for disk images and backups'></a>
+  <a href='https://github.com/tonivega/nitro-ondemand-tunneler'><img src='assets/project-nitro-tunneler.svg' width='49%' alt='Nitro On-Demand Tunneler — connect first, start infrastructure second'></a>
+</p>
+<p align='center'>
+  <a href='https://github.com/tonivega/nitro-uber-pad'><img src='assets/project-nitro-uberpad.svg' width='49%' alt='Nitro UberPad — a paged text and hex editor scriptable with Lua'></a>
+  <a href='https://github.com/tonivega/go4c'><img src='assets/project-go4c.svg' width='49%' alt='go4c — Go to C transpiler'></a>
+</p>
+
+<details>
+<summary><b>Why these projects are interesting</b></summary>
+<br>
+
+- **NitroArchive** — independently compressed Zstandard blocks, concurrent compression with ordered output, HTTP/S3 range reads, FUSE mounting of remote archives, AES-256-GCM encryption and recovery from truncated archives. Built to stop paying cloud storage for zero-filled disk images.
+- **Nitro On-Demand Tunneler** — a dependency-free TCP gate that accepts connections immediately, wakes a container, script or SSH tunnel, waits for readiness and relays traffic. Shared startup per tunnel, explicit failure semantics, `ssh -G` integration, hot reload and six cross-compiled binaries.
+- **Nitro UberPad** — a Fyne desktop editor that pages large files instead of loading one giant buffer, edits binary data nibble by nibble, inspects Unicode, and lets Lua scripts create menus, toolbar buttons, timers, background tasks and binary templates — all observable through an activity journal.
+- **go4c** — an experimental Go → C transpiler with its own C runtime for strings, slices and hash maps, covering structs, methods, multiple returns, pointers and selected standard library mappings.
+
+</details>
+
+### 🧰 More engineering work
+
+| Project | What it demonstrates |
+| --- | --- |
+| [**NitroProxy**](https://github.com/tonivega/nitroproxy) | Dependency-light Go reverse proxy with Docker discovery, Traefik-compatible routing, automatic TLS, live container events and round-robin backends. |
+| [**Simple Worker**](https://github.com/tonivega/simple-worker) | Lightweight distributed job queue with HTTP coordination, concurrent Go workers, authentication, timeouts and container builds. |
+| [**NitroPilot**](https://github.com/tonivega/nitropilot) | Autonomous AI agent that plans, executes, validates and corrects development and DevOps operations. |
+| [**FUSE HTML**](https://github.com/tonivega/tonivega-fuse-html) | FUSE filesystem exposing websites and their linked resources as browsable directory trees. |
+| [**Portable Chromium Screenshot**](https://github.com/tonivega/tonivega-chromium-screenshot) | Self-contained webpage renderer with embedded Chromium and pipeline-friendly output. |
+
+<img src='assets/divider.svg' width='100%' alt=''>
+
+## 🎯 Problems I solve
 
 Companies usually contact me when:
 
-* deployments are slow, manual or unreliable;
-* cloud infrastructure has become expensive or difficult to maintain;
-* a platform needs to be stabilized, rescued or modernized;
-* an internal process should be automated;
-* a new SaaS product, API or technical platform needs to be built;
-* industrial, IoT or legacy systems need to communicate with modern services;
-* the team needs senior technical direction without another full-time hire.
+- 🐢 deployments are slow, manual or unreliable;
+- 💸 cloud infrastructure has become expensive or difficult to maintain;
+- 🛟 a platform needs to be stabilized, rescued or modernized;
+- 🤖 an internal process should be automated;
+- 🚀 a new SaaS product, API or technical platform needs to be built;
+- 🏭 industrial, IoT or legacy systems need to talk to modern services;
+- 🧭 the team needs senior technical direction without another full-time hire.
 
-I work across application development and infrastructure, so I can follow a project from architecture and implementation through deployment, monitoring and ongoing operation.
+I work across application development **and** infrastructure, so I can follow a project from architecture and implementation through deployment, monitoring and ongoing operation.
 
-## Consulting and project services
+## 🛠️ Consulting and project services
 
-### DevOps and cloud engineering
+<table>
+<tr>
+<td valign='top' width='33%'>
 
-* Cloud and container architecture
-* Docker-based platforms
-* CI/CD implementation and optimization
-* Infrastructure and deployment automation
-* Reverse proxies, networking and TLS
-* Monitoring, reliability and operational tooling
-* Infrastructure audits and technical rescue work
+**☁️ DevOps &amp; cloud**
 
-### Custom platforms and backend systems
+- Cloud and container architecture
+- Docker-based platforms
+- CI/CD implementation
+- Deployment automation
+- Reverse proxies, networking, TLS
+- Monitoring and reliability
+- Audits and technical rescue
 
-* SaaS platforms and internal business tools
-* APIs, integrations and backend services
-* Distributed workers and asynchronous processing
-* Data collection, scraping and automation pipelines
-* Marketplaces and workflow platforms
-* Legacy modernization and system integration
+</td>
+<td valign='top' width='33%'>
 
-### AI, IoT and industrial systems
+**🧱 Platforms &amp; backends**
 
-* AI agents and operational automation
-* IoT device management and dashboards
-* Edge and industrial integrations
-* Privacy-conscious sensor platforms
-* AS/400 maintenance and integration
-* Custom technical prototypes
+- SaaS and internal business tools
+- APIs and integrations
+- Distributed workers and queues
+- Data collection pipelines
+- Marketplaces and workflows
+- Legacy modernization
 
-## Selected engineering work
+</td>
+<td valign='top' width='33%'>
 
-| Project                                                                                  | What it demonstrates                                                                                                                                             |
-| ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [NitroProxy](https://github.com/tonivega/nitroproxy)                                     | Dependency-light Go reverse proxy with Docker discovery, Traefik-compatible routing, automatic TLS certificates, live container events and round-robin backends. |
-| [Simple Worker](https://github.com/tonivega/simple-worker)                               | Lightweight distributed job queue with HTTP coordination, concurrent Go workers, authentication, timeouts and container builds.                                  |
-| [NitroPilot](https://github.com/tonivega/nitropilot)                                     | Autonomous AI agent designed to plan, execute, validate and correct development and DevOps operations.                                                           |
-| [Go4C](https://github.com/tonivega/go4c)                                                 | Experimental Go-to-C transpiler for exploring compilers, runtimes and native binaries.                                                                           |
-| [FUSE HTML](https://github.com/tonivega/tonivega-fuse-html)                              | FUSE filesystem that exposes websites and their linked resources as browsable directory trees.                                                                   |
-| [Portable Chromium Screenshot](https://github.com/tonivega/tonivega-chromium-screenshot) | Self-contained webpage renderer with embedded Chromium, pipeline-friendly output and no system browser dependency.                                               |
+**🛰️ AI, IoT &amp; industrial**
 
-## Platforms and product experience
+- AI agents and automation
+- IoT device management
+- Edge and industrial integration
+- Privacy-conscious sensors
+- AS/400 maintenance and integration
+- Custom technical prototypes
 
-Through [Nitrobutton](https://www.nitrobutton.com), I have worked on platforms involving:
+</td>
+</tr>
+</table>
 
-* blockchain document timestamping;
-* encrypted and cloud-backed storage;
-* IoT device management;
-* talent and service marketplaces;
-* public-data collection and opportunity discovery;
-* local commerce and loyalty platforms;
-* WordPress management and monitoring;
-* content and business-process automation.
+## 🌐 Platforms and product experience
 
-These projects demonstrate the ability to move beyond isolated code tasks and build complete products around real business requirements.
+Through [Nitrobutton](https://www.nitrobutton.com) I have worked on platforms involving blockchain document timestamping, encrypted cloud-backed storage, IoT device management, talent and service marketplaces, public-data collection, local commerce and loyalty, WordPress management and monitoring, and content and business-process automation — complete products built around real business requirements, not isolated code tasks.
 
-## Technology
+## 🤝 Ways to work together
 
-**Languages**
+| Engagement | What you get |
+| --- | --- |
+| **Project delivery** | Architecture, development, deployment and technical ownership for a defined platform or feature. |
+| **DevOps improvement sprint** | A focused engagement to diagnose and fix delivery, infrastructure, reliability or automation problems. |
+| **Technical consulting** | Senior guidance on architecture, technical strategy, modernization and planning. |
+| **System rescue** | Hands-on investigation and stabilization of unreliable or undocumented systems. |
 
-`Go` · `Python` · `PHP` · `JavaScript` · `Node.js` · `Shell` · `SQL`
+<img src='assets/divider.svg' width='100%' alt=''>
 
-**Platforms and infrastructure**
+## 💬 Start a conversation
 
-`Linux` · `Docker` · `AWS` · `CI/CD` · `HTTP/TLS` · `REST APIs` · `Distributed Workers` · `Networking`
-
-**Areas**
-
-`DevOps` · `Cloud Architecture` · `Backend Development` · `AI Automation` · `IoT` · `SaaS` · `Legacy Integration`
-
-## Ways to work together
-
-### Project delivery
-
-Architecture, development, deployment and technical ownership for a defined platform or feature.
-
-### DevOps improvement sprint
-
-A focused engagement to diagnose and fix delivery, infrastructure, reliability or automation problems.
-
-### Technical consulting
-
-Senior guidance for architecture decisions, technical strategy, platform modernization or project planning.
-
-### System rescue
-
-Hands-on investigation and stabilization of unreliable, undocumented or difficult-to-maintain systems.
-
-## Start a conversation
-
-Send me a brief description containing:
+Send me a short brief:
 
 ```text
 Project:
@@ -139,9 +145,13 @@ Desired deadline:
 
 I will review the context and suggest a practical next step.
 
-* **Website and portfolio:** [nitrobutton.com](https://www.nitrobutton.com)
-* **Email:** [toni@nitrobutton.com](mailto:toni@nitrobutton.com?subject=Project%20or%20consulting%20enquiry)
-* **Calls:** [+34 93 3900 538](tel:+34933900538)
-* **WhatsApp:** [Send a message](https://wa.me/34933900538?text=Hi%20Toni%2C%20I%27d%20like%20to%20discuss%20a%20software%20or%20DevOps%20project.)
+<div align='center'>
+
+<a href='https://www.nitrobutton.com'><img src='https://img.shields.io/badge/Web-nitrobutton.com-38bdf8?style=for-the-badge&labelColor=0d1117' alt='Website'></a>
+<a href='mailto:toni@nitrobutton.com?subject=Project%20or%20consulting%20enquiry'><img src='https://img.shields.io/badge/Email-toni@nitrobutton.com-a78bfa?style=for-the-badge&labelColor=0d1117' alt='Email'></a>
+<a href='tel:+34933900538'><img src='https://img.shields.io/badge/Call-+34_93_3900_538-f472b6?style=for-the-badge&labelColor=0d1117' alt='Phone'></a>
+<a href='https://wa.me/34933900538?text=Hi%20Toni%2C%20I%27d%20like%20to%20discuss%20a%20software%20or%20DevOps%20project.'><img src='https://img.shields.io/badge/WhatsApp-Send_a_message-25D366?style=for-the-badge&labelColor=0d1117&logo=whatsapp&logoColor=25D366' alt='WhatsApp'></a>
 
 **Available for selected software engineering, DevOps and technical consulting engagements.**
+
+</div>

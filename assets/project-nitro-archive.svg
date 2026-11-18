@@ -1,0 +1,63 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='600' height='320' viewBox='0 0 600 320' role='img' aria-label='NitroArchive'>
+  <defs>
+    <linearGradient id='bg' x1='0' y1='0' x2='1' y2='1'>
+      <stop offset='0' stop-color='#0f172a'/>
+      <stop offset='1' stop-color='#060912'/>
+    </linearGradient>
+    <linearGradient id='edge' x1='0' y1='0' x2='1' y2='1'>
+      <stop offset='0' stop-color='#34d399'/>
+      <stop offset='1' stop-color='#1e293b'/>
+    </linearGradient>
+    <radialGradient id='glow' cx='0.9' cy='0.1' r='0.7'>
+      <stop offset='0' stop-color='#34d399' stop-opacity='0.25'/>
+      <stop offset='1' stop-color='#34d399' stop-opacity='0'/>
+    </radialGradient>
+  </defs>
+  <style>
+    text { font-family: 'Segoe UI', Inter, system-ui, -apple-system, Helvetica, Arial, sans-serif; }
+    .mono { font-family: 'JetBrains Mono', 'Fira Code', Consolas, Menlo, monospace; }
+    .tag { font-size: 12px; font-weight: 700; letter-spacing: 2px; fill: #34d399; }
+    .title { font-size: 32px; font-weight: 800; fill: #f8fafc; }
+    .sub { font-size: 15px; fill: #94a3b8; }
+    .item { font-size: 14px; fill: #cbd5e1; }
+    .dot { fill: #34d399; }
+    .cta { font-size: 13px; font-weight: 700; fill: #34d399; }
+    .glow { animation: breathe 6s ease-in-out infinite; }
+    @keyframes breathe { 0%,100% { opacity: 0.55; } 50% { opacity: 1; } }
+    .blk { fill: #34d399; animation: fill 2.4s ease-in-out infinite; }
+    @keyframes fill { 0%,100% { opacity: 0.12; } 50% { opacity: 0.9; } }
+    .z { fill: #1e293b; }
+    .b2 { animation-delay: 0.2s; } .b3 { animation-delay: 0.4s; } .b4 { animation-delay: 0.6s; }
+    .b5 { animation-delay: 0.8s; } .b6 { animation-delay: 1s; } .b7 { animation-delay: 1.2s; } .b8 { animation-delay: 1.4s; }
+  </style>
+  <rect x='1' y='1' width='598' height='318' rx='18' fill='url(#bg)' stroke='url(#edge)' stroke-width='2'/>
+  <rect class='glow' x='1' y='1' width='598' height='318' rx='18' fill='url(#glow)'/>
+
+  <g>
+    <rect class='blk' x='452' y='30' width='24' height='24' rx='5'/>
+    <rect class='z' x='482' y='30' width='24' height='24' rx='5'/>
+    <rect class='blk b2' x='512' y='30' width='24' height='24' rx='5'/>
+    <rect class='blk b3' x='542' y='30' width='24' height='24' rx='5'/>
+    <rect class='z' x='452' y='60' width='24' height='24' rx='5'/>
+    <rect class='blk b4' x='482' y='60' width='24' height='24' rx='5'/>
+    <rect class='blk b5' x='512' y='60' width='24' height='24' rx='5'/>
+    <rect class='z' x='542' y='60' width='24' height='24' rx='5'/>
+    <rect class='blk b6' x='452' y='90' width='24' height='24' rx='5'/>
+    <rect class='blk b7' x='482' y='90' width='24' height='24' rx='5'/>
+    <rect class='z' x='512' y='90' width='24' height='24' rx='5'/>
+    <rect class='blk b8' x='542' y='90' width='24' height='24' rx='5'/>
+  </g>
+
+  <text x='32' y='48' class='tag mono'>GO · ZSTD · S3 · FUSE</text>
+  <text x='32' y='92' class='title'>NitroArchive</text>
+  <text x='32' y='124' class='sub'>Stop paying for empty space in disk &amp; partition backups.</text>
+
+  <circle class='dot' cx='38' cy='166' r='4'/>
+  <text x='52' y='171' class='item'>Seekable Zstandard blocks, compressed in parallel</text>
+  <circle class='dot' cx='38' cy='196' r='4'/>
+  <text x='52' y='201' class='item'>Range reads over HTTP &amp; S3 — mount without downloading</text>
+  <circle class='dot' cx='38' cy='226' r='4'/>
+  <text x='52' y='231' class='item'>AES-256-GCM encryption · truncated-archive recovery</text>
+
+  <text x='32' y='288' class='cta mono'>github.com/tonivega/nitro-archive-live →</text>
+</svg>

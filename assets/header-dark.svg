@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="280" viewBox="0 0 1200 280" role="img" aria-label="Toni Vega: Senior DevOps, Platform and Go Systems Engineer">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1117"/>
+      <stop offset="1" stop-color="#161b22"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#58a6ff"/>
+      <stop offset="1" stop-color="#a371f7"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="280" rx="16" fill="url(#bg)"/>
+  <rect x="0.5" y="0.5" width="1199" height="279" rx="16" fill="none" stroke="#30363d"/>
+  <circle cx="36" cy="30" r="6" fill="#f85149"/>
+  <circle cx="56" cy="30" r="6" fill="#d29922"/>
+  <circle cx="76" cy="30" r="6" fill="#3fb950"/>
+  <text x="60" y="86" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="18" fill="#3fb950">$ whoami</text>
+  <text x="60" y="144" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="52" font-weight="700" fill="#e6edf3">Toni Vega</text>
+  <text x="60" y="188" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="24" font-weight="600" fill="url(#accent)">Senior DevOps · Platform · Go Systems Engineer</text>
+  <text x="60" y="226" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="16" fill="#8b949e">Linux · Docker · CI/CD · Networking · Storage · Cloud · 15+ years · Barcelona</text>
+  <rect x="60" y="244" width="160" height="4" rx="2" fill="url(#accent)"/>
+  <rect x="840" y="70" width="300" height="150" rx="10" fill="#0d1117" stroke="#30363d"/>
+  <text x="860" y="104" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="15" fill="#ff7b72">status<tspan fill="#e6edf3"> := </tspan><tspan fill="#a5d6ff">"open to work"</tspan></text>
+  <text x="860" y="134" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="15" fill="#ff7b72">focus<tspan fill="#e6edf3">  := </tspan><tspan fill="#a5d6ff">"platform, Go"</tspan></text>
+  <text x="860" y="164" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="15" fill="#ff7b72">remote<tspan fill="#e6edf3"> := </tspan><tspan fill="#79c0ff">true</tspan></text>
+  <text x="860" y="194" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="15" fill="#8b949e">// tests, trade-offs, limits</text>
+</svg>
